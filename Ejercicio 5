@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    // Declaracion de variables
+    float horas_trabajadas;
+    float coste_por_hora;
+    float paga;
+
+    // Pregunta al usuario por el nÃºmero de horas trabajadas
+    printf("Introduce el numero de horas trabajadas: ");
+    scanf("%f", &horas_trabajadas);
+
+    // Pregunta al usuario por el coste por hora
+    printf("Introduce el coste por hora(no coloques puntos o comas): ");
+    scanf("%f", &coste_por_hora);
+
+    // Calcula la paga
+    paga = horas_trabajadas * coste_por_hora;
+
+    // Muestra la paga que le corresponde al usuario
+    printf("La paga que te corresponde es: %.2f\n", paga);
+
+    return 0;
+}
