@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int edad;  // DeclaraciÃ³n de la variable para almacenar la edad
+
+    // Pregunta al usuario por su edad
+    printf("Introduce tu edad: ");
+    scanf("%d", &edad);
+
+    // Condicional para determinar si es mayor de edad
+    if (edad >= 18) {
+        printf("Eres mayor de edad.\n");
+    } else {
+        printf("No eres mayor de edad.\n");
+    }
+
+    return 0;
+}
