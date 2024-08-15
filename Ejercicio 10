@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    // Definir el peso de los productos en gramos
+    int peso_payaso = 112;
+    int peso_muneca = 75;
+
+    // Variables para almacenar el nÃºmero de payasos y muÃ±ecas
+    int num_payasos, num_munecas;
+
+    // Preguntar al usuario el nÃºmero de payasos y muÃ±ecas vendidos
+    printf("Introduce el numero de payasos vendidos: ");
+    scanf("%d", &num_payasos);
+
+    printf("Introduce el numero de muÃ±ecas vendidas: ");
+    scanf("%d", &num_munecas);
+
+    // Calcular el peso total del paquete
+    int peso_total = (num_payasos * peso_payaso) + (num_munecas * peso_muneca);
+
+    // Mostrar el peso total del paquete
+    printf("El peso total del paquete es: %d gramos\n", peso_total);
+
+    return 0;
+}
