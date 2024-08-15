@@ -1,1 +1,13 @@
+#include <stdio.h>
+#include <math.h>
 
+int main() {
+  float peso, estatura, IMC;
+  printf("Introduce tu peso (en kg): ");
+  scanf("%f", &peso);
+  printf("Introduce tu estatura (en metros): ");
+  scanf("%f", &estatura);
+  IMC = peso / (estatura * estatura);
+  printf("Tu Ã­ndice de masa corporal es %.2f\n", roundf(IMC * 100) / 100);
+  return 0;
+}
