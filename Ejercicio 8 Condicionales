@@ -1,1 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int edad;  // Declaracion de la variable para almacenar la edad
+    int precio;  // Declaracion de la variable para almacenar el precio de la entrada
+
+    // Pregunta al usuario por la edad del cliente
+    printf("Introduce la edad del cliente: ");
+    scanf("%d", &edad);
+
+    // Condicional para determinar el precio de la entrada segun la edad
+    if (edad < 4) {
+        precio = 0;  // Gratis para menores de 4 aÃ±os
+    } else if (edad >= 4 && edad <= 18) {
+        precio = 5;  // 5 para clientes entre 4 y 18 aÃ±os
+    } else {
+        precio = 10;  // 10 para mayores de 18 aÃ±os
+    }
+
+    // Mostrar el precio de la entrada
+    printf("El precio de la entrada es: %d\n", precio);
+
+    return 0;
+}
 
