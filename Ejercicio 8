@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int n, m;  // Declaracion de variables para los numeros enteros
+    int c, r;  // Declaracion de variables para el cociente y el resto
+
+    // Pedir al usuario el primer numero (n)
+    printf("Introduce el primer numero entero (n): ");
+    scanf("%d", &n);
+
+    // Pedir al usuario el segundo numero (m)
+    printf("Introduce el segundo numero entero (m): ");
+    scanf("%d", &m);
+
+    // Calcular el cociente de la division entera
+    c = n / m;
+
+    // Calcular el resto de la division entera
+    r = n % m;
+
+    // Mostrar los resultados
+    printf("%d entre %d da un cociente %d y un resto %d\n", n, m, c, r);
+
+    return 0;
+}
