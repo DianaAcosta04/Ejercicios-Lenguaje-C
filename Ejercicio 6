@@ -1,1 +1,24 @@
+#include <stdio.h>
 
+int main() {
+    int n;  // Declaración de la variable para almacenar el número entero positivo
+    int suma;  // Declaración de la variable para almacenar la suma
+
+    // Preguntar al usuario por el número entero positivo
+    printf("Introduce un número entero positivo: ");
+    scanf("%d", &n);
+
+    // Verificar que el número es positivo
+    if (n <= 0) {
+        printf("El número debe ser entero positivo.\n");
+        return 1;  // Salir del programa con un código de error
+    }
+
+    // Calcular la suma de los enteros desde 1 hasta n
+    suma = n * (n + 1) / 2;
+
+    // Mostrar la suma
+    printf("La suma de todos los enteros desde 1 hasta %d es: %d\n", n, suma);
+
+    return 0;
+}
