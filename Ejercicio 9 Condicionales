@@ -1,0 +1,61 @@
+#include <stdio.h>
+
+int main() {
+    int tipo_pizza, ingrediente;
+    char *tipo_pizza_str;
+    char *ingrediente_str;
+
+    // Preguntar al usuario si quiere una pizza vegetariana o no
+    printf("Bienvenido a Bella Napoli.\n");
+    printf("Elige el tipo de pizza:\n");
+    printf("1. Vegetariana\n");
+    printf("2. No Vegetariana\n");
+    printf("Introduce 1 o 2: ");
+    scanf("%d", &tipo_pizza);
+
+    // Determinar los ingredientes en funciÃ³n del tipo de pizza
+    if (tipo_pizza == 1) {
+        tipo_pizza_str = "Vegetariana";
+        printf("Has elegido una pizza Vegetariana.\n");
+        printf("Ingredientes disponibles:\n");
+        printf("1. Pimiento\n");
+        printf("2. Tofu\n");
+        printf("Introduce el numero del ingrediente que deseas: ");
+        scanf("%d", &ingrediente);
+        if (ingrediente == 1) {
+            ingrediente_str = "Pimiento";
+        } else if (ingrediente == 2) {
+            ingrediente_str = "Tofu";
+        } else {
+            printf("Opción no válida.\n");
+            return 1;
+        }
+    } else if (tipo_pizza == 2) {
+        tipo_pizza_str = "No Vegetariana";
+        printf("Has elegido una pizza No Vegetariana.\n");
+        printf("Ingredientes disponibles:\n");
+        printf("1. Peperoni\n");
+        printf("2. Jamón\n");
+        printf("3. Salmón\n");
+        printf("Introduce el número del ingrediente que deseas: ");
+        scanf("%d", &ingrediente);
+        if (ingrediente == 1) {
+            ingrediente_str = "Peperoni";
+        } else if (ingrediente == 2) {
+            ingrediente_str = "Jamon";
+        } else if (ingrediente == 3) {
+            ingrediente_str = "Salmon";
+        } else {
+            printf("Opción no valida.\n");
+            return 1;
+        }
+    } else {
+        printf("Opción no valida.\n");
+        return 1;
+    }
+
+    // Mostrar la pizza seleccionada y sus ingredientes
+    printf("Has elegido una pizza %s con mozzarella, tomate y %s.\n", tipo_pizza_str, ingrediente_str);
+
+    return 0;
+}
