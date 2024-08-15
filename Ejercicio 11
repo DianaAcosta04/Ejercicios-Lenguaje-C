@@ -1,1 +1,19 @@
+#include <stdio.h>
 
+int main() {
+  double cantidad;
+  printf("Introduce la cantidad de dinero depositada: ");
+  scanf("%lf", &cantidad);
+
+  double interes = 0.04;
+  double balance1 = cantidad * (1 + interes);
+  printf("Cantidad de ahorros tras el primer anio: %.2lf\n", balance1);
+
+  double balance2 = balance1 * (1 + interes);
+  printf("Cantidad de ahorros tras el segundo anio: %.2lf\n", balance2);
+
+  double balance3 = balance2 * (1 + interes);
+  printf("Cantidad de ahorros tras el tercer anio: %.2lf\n", balance3);
+
+  return 0;
+}
