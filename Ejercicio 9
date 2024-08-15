@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double cantidad_invertir, interes_anual, capital_final;
+    int numero_anos;
+
+    // Preguntar al usuario los datos
+    printf("Introduce la cantidad a invertir: ");
+    scanf("%lf", &cantidad_invertir);
+
+    printf("Introduce el interes anual (en porcentaje): ");
+    scanf("%lf", &interes_anual);
+
+    printf("Introduce el numero de anios: ");
+    scanf("%d", &numero_anos);
+
+    // Convertir el interes anual a decimal
+    interes_anual = interes_anual / 100.0;
+
+    // Calcular el capital final
+    capital_final = cantidad_invertir * pow(1 + interes_anual, numero_anos);
+
+    // Mostrar el capital final
+    printf("El capital obtenido al final de la inversion es: %.2f\n", capital_final);
+
+    return 0;
+}
