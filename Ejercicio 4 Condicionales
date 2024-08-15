@@ -3,7 +3,7 @@
 int main() {
     int numero;  // Declaracion de la variable para almacenar el nÃºmero
 
-    printf("Ingresa un nÃumero entero: ");
+    printf("Ingresa un numero entero: ");
     scanf("%d", &numero);
 
     // Condicional para verificar si el numero es par o impar
