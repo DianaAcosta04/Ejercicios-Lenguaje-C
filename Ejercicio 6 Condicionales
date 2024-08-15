@@ -1,1 +1,29 @@
+#include <stdio.h>
+#include <ctype.h>  // Para funciones de manejo de caracteres como tolower()
 
+int main() {
+    char nombre[50];
+    char sexo;
+    char inicial;
+
+    // Solicitar el nombre
+    printf("Ingrese su nombre: ");
+    scanf("%s", nombre);
+
+    // Solicitar el sexo M/F    
+    printf("Ingrese su sexo (M/F): ");
+    scanf(" %c", &sexo); // El espacio antes de %c es para evitar capturar el enter de la entrada anterior
+
+    // Convertir a minÃºscula la primera letra del nombre y el sexo para hacer la comparaciÃ³n
+    inicial = tolower(nombre[0]);
+    sexo = tolower(sexo);
+
+    // Determinar el grupo
+    if ((sexo == 'f' && inicial < 'm') || (sexo == 'm' && inicial > 'n')) {
+        printf("Usted pertenece al grupo A.\n");
+    } else {
+        printf("Usted pertenece al grupo B.\n");
+    }
+
+    return 0;
+}
