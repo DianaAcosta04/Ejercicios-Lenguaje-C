@@ -1,1 +1,28 @@
+#include <stdio.h>
+#include <math.h>
 
+#define EPSILON 0.0001 // Es una pequeÃ±a constante que define el margen de error aceptable para las comparaciones de punto flotante.
+
+int main() {
+  float puntos;
+  printf("Ingrese la puntuaciÃ³n del empleado: ");
+  scanf("%f", &puntos);
+
+  if (fabs(puntos - 0.0) < EPSILON || fabs(puntos - 0.2) < EPSILON || fabs(puntos - 0.3) < EPSILON) {
+    printf("Nivel de rendimiento: BÃ¡sico\n");
+    printf("Cantidad de dinero: $0\n");
+  } else if (fabs(puntos - 0.4) < EPSILON) {
+    printf("Nivel de rendimiento: Intermedio\n");
+    printf("Cantidad de dinero: $500\n");
+  } else if (puntos > 0.4 && puntos < 1.0) {
+    printf("Nivel de rendimiento: Avanzado\n");
+    printf("Cantidad de dinero: $1000\n");
+  } else if (puntos >= 1.0) {
+    printf("Nivel de rendimiento: Excelente\n");
+    printf("Cantidad de dinero: $2000\n");
+  } else {
+    printf("PuntuaciÃ³n invÃ¡lida.\n");
+  }
+
+  return 0;
+}
