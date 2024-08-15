@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    // Definir el precio de una barra de pan fresca
+    float precio_barra = 3.49;
+    float descuento = 0.60;
+
+    // Variable para almacenar el nÃºmero de barras vendidas
+    int barras_no_frescas;
+
+    // Preguntar al usuario el numero de barras de pan no frescas vendidas
+    printf("Introduce el numero de barras de pan no frescas vendidas: ");
+    scanf("%d", &barras_no_frescas);
+
+    // Calcular el precio de una barra no fresca y el coste total
+    float precio_barra_descuento = precio_barra * (1 - descuento);
+    float coste_total = barras_no_frescas * precio_barra_descuento;
+
+    // Mostrar el precio habitual, el descuento y el coste final
+    printf("Precio habitual de una barra de pan: %.2f Pesos\n", precio_barra);
+    printf("Descuento por no ser fresca: %.2f%%\n", descuento * 100);
+    printf("Coste total: %.2f Pesos\n", coste_total);
+
+    return 0;
+}
