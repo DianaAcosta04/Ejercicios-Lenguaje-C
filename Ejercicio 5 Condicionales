@@ -1,1 +1,20 @@
+#include <stdio.h>
 
+int main() {
+    int edad;
+    float ingresos;
+
+    printf("Ingrese su edad: ");
+    scanf("%d", &edad);
+
+    printf("Ingrese sus ingresos mensuales: ");
+    scanf("%f", &ingresos);
+
+    if (edad >= 16 && ingresos >= 1000) {
+        printf("Usted debe tributar.\n");
+    } else {
+        printf("Usted no debe tributar.\n");
+    }
+
+    return 0;
+}
