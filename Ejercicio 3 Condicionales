@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    // Variables para almacenar los dos nÃºmeros
+    float numerador, divisor;
+
+    // Pedir al usuario que introduzca los dos nÃºmeros
+    printf("Introduce el numerador: ");
+    scanf("%f", &numerador);
+
+    printf("Introduce el divisor: ");
+    scanf("%f", &divisor);
+
+    // Comprobar si el divisor es cero
+    if (divisor == 0) {
+        printf("Error: La division por cero no esta¡ permitida.\n");
+    } else {
+        // Realizar la division y mostrar el resultado
+        float resultado = numerador / divisor;
+        printf("El resultado de la division es: %.2f\n", resultado);
+    }
+
+    return 0;
+}
