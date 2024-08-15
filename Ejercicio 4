@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    // Calcula la expresion
+    double resultado = pow((3.0 + 2.0) / 25.0, 2);
+
+    // Muestra el resultado en la pantalla
+    printf("El resultado de ((3+2)/25)^2 es: %f", resultado);
+
+    return 0;
+}
