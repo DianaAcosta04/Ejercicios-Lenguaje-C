@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    char nombre[100];  // Declaración de una cadena para almacenar el nombre del usuario
+
+    // Preguntar al usuario por su nombre
+    printf("Introduce tu nombre: ");
+    scanf("%99s", nombre);  // Leer el nombre del usuario. %99s limita la entrada a 99 caracteres
+
+    // Mostrar el saludo personalizado
+    printf("¡Hola %s!\n", nombre);
+
+    return 0;
+}
