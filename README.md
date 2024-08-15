@@ -1,4 +1,4 @@
-# EjerciciosC
+# Ejercicios C
 
 Integrantes: 
 - Diana Katerine Acosta Viasús
